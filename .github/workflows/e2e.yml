@@ -24,7 +24,7 @@ on:
 
 jobs:
   build:
-    runs-on: k8s-runner-e2e
+    runs-on: self-hosted
     # We allow builds:
     # 1) When triggered manually
     # 2) When it's a merge into a branch
@@ -63,7 +63,7 @@ jobs:
       - name: Checkout e2e test repo
         uses: actions/checkout@v3
         with:
-          repository: cdapio/cdap-e2e-tests
+          repository: rahuldash171/cdap-e2e-tests
           path: e2e
 
       - name: Cache
