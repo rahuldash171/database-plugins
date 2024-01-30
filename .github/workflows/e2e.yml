@@ -65,6 +65,7 @@ jobs:
         with:
           repository: rahuldash171/cdap-e2e-tests
           path: e2e
+          ref: developDebug
 
       - name: Cache
         uses: actions/cache@v3
